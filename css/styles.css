@@ -142,16 +142,15 @@ header {
   position: relative;
   flex-grow: 1;
   margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .booster-item span:first-child::after {
   content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0.35em;
+  flex-grow: 1;
   border-bottom: 1px dotted #333;
-  z-index: 0;
+  margin-left: 10px;
 }
 
 .booster-item span:last-child {
