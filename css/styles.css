@@ -309,3 +309,58 @@ footer {
     padding-left: 20px;
   }
 }
+
+/* ================================ */
+/*  Mobile Responsive Overrides    */
+/* ================================ */
+
+/* Medium phones / small tablets */
+@media (max-width: 768px) {
+  /* shrink logos */
+  .header-icon {
+    width: 60px;
+  }
+  /* slightly smaller heading text */
+  .header-text h1 { font-size: 2.2em; }
+  .header-text h2 { font-size: 1.6em; }
+  .tagline       { font-size: 1.1em; }
+
+  /* single-column booster list */
+  .booster-grid {
+    grid-template-columns: 1fr;
+    gap: 10px 0;
+  }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+  /* stack header elements vertically */
+  .header-layout {
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* ensure logos stay small and centered */
+  .header-icon {
+    width: 50px;
+    margin: 0 auto;
+  }
+  /* center nav & headings */
+  .main-nav ul {
+    margin-bottom: 10px;
+  }
+
+  /* get rid of left/right sidebars */
+  .sports-sidebar {
+    display: none;
+  }
+  /* tighten up the page frame padding */
+  .page-frame {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  /* shrink footer text a bit */
+  footer p {
+    font-size: 0.9em;
+  }
+}
