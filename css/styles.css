@@ -126,8 +126,8 @@ header {
 /* === BOOSTER PROJECTS GRID === */
 .booster-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 12px 30px;
+  grid-template-columns: repeat(2, 1fr); /* Fixed to 2 columns */
+  gap: 12px 60px;
   margin-top: 20px;
 }
 
@@ -139,9 +139,11 @@ header {
 }
 
 .booster-item span:first-child {
-  display: flex;
-  align-items: baseline;
   position: relative;
+  flex-grow: 1;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .booster-item span:first-child::after {
@@ -149,7 +151,6 @@ header {
   flex-grow: 1;
   border-bottom: 1px dotted #333;
   margin-left: 10px;
-  align-self: flex-end;
 }
 
 .booster-item span:last-child {
@@ -320,5 +321,11 @@ footer {
   .email-line {
     font-size: 1em;
     padding-left: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .booster-grid {
+    grid-template-columns: 1fr;
   }
 }
