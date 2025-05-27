@@ -140,7 +140,8 @@ header {
 
 .booster-item span:first-child {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  position: relative;
 }
 
 .booster-item span:first-child::after {
@@ -148,7 +149,7 @@ header {
   flex-grow: 1;
   border-bottom: 1px dotted #333;
   margin-left: 10px;
-  height: 0;
+  align-self: flex-end;
 }
 
 .booster-item span:last-child {
