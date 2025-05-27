@@ -139,9 +139,6 @@ header {
 }
 
 .booster-item span:first-child {
-  position: relative;
-  flex-grow: 1;
-  margin-right: 10px;
   display: flex;
   align-items: center;
 }
@@ -151,6 +148,7 @@ header {
   flex-grow: 1;
   border-bottom: 1px dotted #333;
   margin-left: 10px;
+  height: 0;
 }
 
 .booster-item span:last-child {
