@@ -25,6 +25,7 @@ header {
 .header-icon {
   width: 90px;
   height: auto;
+  max-width: 100%;
 }
 
 .header-text {
@@ -84,9 +85,10 @@ header {
   background-color: #FFD700;
   padding: 20px;
   max-width: 1200px;
+  width: 100%;
   flex: 1;
   z-index: 1;
-  margin-top: 30px; /* Blue space between header and yellow content */
+  margin-top: 30px;
 }
 
 /* === SIDE SPORT LISTS === */
@@ -107,7 +109,7 @@ header {
   justify-content: space-between;
   height: 100%;
   list-style: none;
-  padding: 20px 0; /* Add top/bottom padding */
+  padding: 20px 0;
   margin: 0;
   font-size: 1.4em;
   font-weight: bold;
@@ -242,7 +244,7 @@ footer {
 }
 
 .contact-style {
-  padding-top: 10px; /* reduced top padding */
+  padding-top: 10px;
 }
 
 .team-list {
@@ -261,4 +263,49 @@ footer {
   margin-top: 10px;
   text-align: left;
   padding-left: 60px;
+}
+
+/* === MOBILE RESPONSIVENESS === */
+@media (max-width: 768px) {
+  .header-layout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .sports-sidebar {
+    display: none;
+  }
+
+  .page-frame {
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  .booster-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .header-text h1 {
+    font-size: 2em;
+  }
+
+  .header-text h2 {
+    font-size: 1.5em;
+  }
+
+  .tagline {
+    font-size: 1.1em;
+  }
+
+  .team-line,
+  .email-line {
+    font-size: 1em;
+    padding-left: 20px;
+  }
 }
