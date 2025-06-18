@@ -53,14 +53,17 @@ header {
 }
 
 .main-nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* Prevents wrapping */
+  gap: 40px; /* Controls spacing between links */
   list-style: none;
   padding: 0;
   margin: 0 0 10px 0;
 }
 
 .main-nav ul li {
-  display: inline-block;
-  margin: 0 25px;
+  margin: 0; /* remove individual margins since gap handles spacing */
 }
 
 .main-nav ul li a {
@@ -68,6 +71,7 @@ header {
   font-size: 1.4em;
   color: #002366;
   font-weight: bold;
+  white-space: nowrap; /* Prevent text from wrapping */
 }
 
 /* === PAGE LAYOUT === */
