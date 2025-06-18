@@ -301,47 +301,39 @@ footer {
 @media (max-width: 600px) {
   .header-layout {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
   }
 
-  .header-icon {
-    width: 70px;
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+    margin: 10px 0;
+  }
+
+  .main-nav ul li {
+    margin: 0;
   }
 
   .main-nav ul li a {
-    font-size: 1.1em;
-  }
-
-  .booster-item {
-    font-size: 1.1em;
-  }
-
-  .fundraiser-list,
-  .scholarship-info li {
     font-size: 1.2em;
   }
 
-  .team-line,
-  .email-line {
-    font-size: 1em;
-    padding-left: 20px;
-  }
-}
-
-@media (max-width: 700px) {
-  .booster-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .main-nav ul {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 10px;
+  .header-text {
+    text-align: center;
   }
 
-  .main-nav ul li a {
+  .header-text h1 {
+    font-size: 2em;
+  }
+
+  .header-text h2 {
+    font-size: 1.5em;
+  }
+
+  .tagline {
     font-size: 1.1em;
   }
 }
