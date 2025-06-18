@@ -333,3 +333,15 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 600px) {
+  .main-nav ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+
+  .main-nav ul li a {
+    font-size: 1.1em;
+  }
+}
