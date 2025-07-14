@@ -290,11 +290,6 @@ header {
   border-radius: 8px;
 }
 
-.rodes-meats-info h3 {
-  color: #000;
-  margin-top: 0;
-}
-
 .sponsor-section {
   margin: 1rem auto;
   text-align: center;
@@ -318,7 +313,6 @@ header {
   max-width: 600px;
   margin: 1rem auto;
 }
-
 
 /* === FOOTER === */
 footer {
