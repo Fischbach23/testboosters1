@@ -265,7 +265,8 @@ header {
 .raffle-link {
   color: #4a3ddf;
   text-decoration: underline;
-  font-size: 2.0rem;
+  font-size: 2.0rem; /* or try 1.6rem, 24px, etc. */
+  font-weight: bold; /* optional for emphasis */
 }
 
 .promo-image,
