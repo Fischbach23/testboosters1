@@ -272,7 +272,7 @@ header {
 .rodes-logo,
 .sponsor-logo,
 .ebike-photo {
-  width: 200px;         /* Force smaller image size */
+  width: 100px;   !important      /* Force smaller image size */
   height: auto;
   margin: 1rem auto;
   display: block;
