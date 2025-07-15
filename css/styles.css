@@ -249,12 +249,12 @@ header {
 
 .raffle-section {
   text-align: center;
-  padding: 0.5rem;                 /* ↓ less white space inside */
+  padding: 1rem 0.75rem;        /* ↓ slightly less white space */
   background-color: #f9f9f9;
-  border-radius: 8px;
-  margin: 1rem auto;               /* ↓ tighter spacing around */
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.05);
-  max-width: 700px;                /* optional: make more narrow */
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  max-width: 900px;             /* optional: slightly tighter container */
 }
 
 .raffle-section h2 {
